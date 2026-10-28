@@ -1,0 +1,32 @@
+# Auto-downloaded Magisk payload (fetched by root-emulator.sh on first run)
+Magisk.zip
+Magisk.zip.part
+Magisk-v*.apk
+
+# APKs rootAVD installs / pulls back into Apps/ at runtime
+Apps/*
+!Apps/.gitkeep
+
+# Files rootAVD downloads/generates while patching
+# (patched/backup ramdisks, fakeboot.img, version lists, embedded-busybox script, kernels)
+*.apk
+*.img
+*.txt
+bbscript.sh
+initramfs.img
+bzImage
+*.rc
+libbusybox*
+sbin*
+stub.apk
+response.txt
+
+# Logs written by root-emulator.sh
+.patch-*.log
+.emulator-*.log
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
